@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* reusable class */
+.base-mt {
+    margin-top: 5%;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+span {
+    font-weight: 800;
+}
+
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.navbar {
+    /* border: 1px black solid; */
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10%;
+}
+
+.navbar button {
+    cursor: pointer;
+    padding: 18px 30px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background-color 0.8s, color 0.3s;
+}
+
+.nav-btn-to-dashb a {
+    text-decoration: none;
+    color: #000000;
+    padding: 18px 20px;
+
+}
+
+.nav-btn-to-dashb a:hover {
+    background-color: #d6d9dd56;
+    color: #000000;
+    border-radius: 10px;
+
+}
+
+.nav-btn.active {
+    background-color: #d6d9dd56;
+    color: #000000
+}
+
+
+
+.main-content {
+    /* border: 1px black solid; */
+    max-width: 45vw;
+    padding: 10px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.home h1 {
+    font-size: 45px;
+}
+
+.home .home-dsc {
+    max-width: 90%;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    border: 2px #0000001a solid;
+    border-radius: 20px;
+    width: 310px;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 0;
+}
+
+.box img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.home-link {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.home-link a {
+    color: black;
+}
+
+/* about */
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 30px;
+    max-width: 90%;
+}
+
+
+/* portfolio */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.portfolio h2 {
+    margin-bottom: 20px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 200px;
+}
+
+.portfolio-card p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #00000081;
+    font-size: small;
+}
+
+.portfolio-card a {
+    text-decoration: none;
+    padding: 5px;
+    border: #00000048 2px solid;
+    border-radius: 10px;
+    color: #000000b7;
+    text-align: center;
+
+}
+
+.portfolio-card a:hover {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 7px;
+}
+
+
+.portfolio-card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.portfolio-card img {
+    width: 200px;
+    border-radius: 8px;
+}
+
+
+
+
+
+/* dasboard */
+.dashb {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+
+}
+
+.dashb-header {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.dashb-header h2 {
+    font-size: 35px;
+}
+
+.dashb-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.dashb-add-btn {
+    border: black 2px solid;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.dashb-home-btn {
+    border: black 2px solid;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.dashb-logout-btn {
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    font-weight: bold;
+}
+
+.dashb .edit {
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+}
+
+.dashb .delete {
+    font-size: 20px;
+    color: red;
+}
+
+/* add project */
+.add-project {
+    padding: 20px;
+    width: 40%;
+    margin-bottom: 100px;
+}
+
+.add-project h2 {
+    margin-bottom: 20px;
+}
+
+
+.add-project input[type="text"] {
+    width: 95%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.add-project textarea {
+    width: 95%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.addp-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.addp-btn input[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addp-btn a {
+    border: black 2px solid;
+    border-radius: 5px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+/* login */
+.login {
+    padding: 20px;
+    width: 500px;
+    height: 550px;
+}
+
+.login h2 {
+    margin-bottom: 20px;
+}
+
+.login input[type="text"] {
+    width: 95%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.login input[type="password"] {
+    width: 95%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.login input[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login a {
+    border: black 2px solid;
+    border-radius: 5px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* edit project */
+.edit-project {
+    padding: 20px;
+    width: 40%;
+    margin-bottom: 100px;
+}
+
+.edit-project h2 {
+    margin-bottom: 20px;
+}
+
+.edit-project input[type="text"] {
+    width: 95%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.edit-project textarea {
+    width: 95%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.ep-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.edit-project input[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ep-btn a {
+    border: black 2px solid;
+    border-radius: 5px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+/* portfolio detail */
+.portfolio-detail-box {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+}
+
+
+.portfolio-detail-navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-radius: 8px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.portfolio-detail-navbar h1 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.portfolio-detail-navbar a {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.portfolio-detail {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+.portfolio-detail h2 {
+    margin-bottom: 20px;
+}
+
+.portfolio-detail img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 2%;
+
+}
+
+.portfolio-detail p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.portfolio-detail .techstack {
+    color: #000000b3;
+}
+
+.portfolio-detail a {
+    color: black;
+}
+
+
+/* contact */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    max-width: 90%;
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.contact-link a {
+    color: black;
+}
