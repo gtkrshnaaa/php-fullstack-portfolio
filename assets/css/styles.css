@@ -17,6 +17,11 @@ span {
     font-weight: 800;
 }
 
+.tags {
+    color: #ffffff;
+    background-color: #000000;
+    margin-right: 5px;
+}
 
 body {
     display: flex;
@@ -46,20 +51,6 @@ body {
     border-radius: 10px;
     margin-top: 10px;
     transition: background-color 0.8s, color 0.3s;
-}
-
-.nav-btn-to-dashb a {
-    text-decoration: none;
-    color: #000000;
-    padding: 18px 20px;
-
-}
-
-.nav-btn-to-dashb a:hover {
-    background-color: #d6d9dd56;
-    color: #000000;
-    border-radius: 10px;
-
 }
 
 .nav-btn.active {
@@ -147,6 +138,11 @@ body {
     padding-bottom: 10%;
 }
 
+.portfolio .linktodshb {
+    text-decoration: none;
+    color: #000000;
+}
+
 .portfolio h2 {
     margin-bottom: 20px;
 }
@@ -209,324 +205,6 @@ body {
 
 
 
-
-/* dasboard */
-.dashb {
-    display: flex;
-    flex-direction: column;
-    max-width: 80%;
-
-}
-
-.dashb-header {
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-.dashb-header h2 {
-    font-size: 35px;
-}
-
-.dashb-btn {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-
-.dashb-add-btn {
-    border: black 2px solid;
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    padding: 5px 20px;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.dashb-home-btn {
-    border: black 2px solid;
-    border-radius: 10px;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-weight: bold;
-}
-
-.dashb-logout-btn {
-    border: none;
-    border-radius: 10px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    padding: 12px 22px;
-    font-weight: bold;
-}
-
-.dashb .edit {
-    font-size: 20px;
-    color: rgb(65, 65, 65);
-}
-
-.dashb .delete {
-    font-size: 20px;
-    color: red;
-}
-
-/* add project */
-.add-project {
-    padding: 20px;
-    width: 40%;
-    margin-bottom: 100px;
-}
-
-.add-project h2 {
-    margin-bottom: 20px;
-}
-
-
-.add-project input[type="text"] {
-    width: 95%;
-    height: 30px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.add-project textarea {
-    width: 95%;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.addp-btn {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.addp-btn input[type="submit"] {
-    border: none;
-    border-radius: 5px;
-    padding: 10px 30px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.addp-btn a {
-    border: black 2px solid;
-    border-radius: 5px;
-    padding: 10px 30px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-
-}
-
-/* login */
-.login {
-    padding: 20px;
-    width: 500px;
-    height: 550px;
-}
-
-.login h2 {
-    margin-bottom: 20px;
-}
-
-.login input[type="text"] {
-    width: 95%;
-    height: 30px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.login input[type="password"] {
-    width: 95%;
-    height: 30px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.login-btn {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.login input[type="submit"] {
-    border: none;
-    border-radius: 5px;
-    padding: 10px 30px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.login a {
-    border: black 2px solid;
-    border-radius: 5px;
-    padding: 10px 30px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-
-/* edit project */
-.edit-project {
-    padding: 20px;
-    width: 40%;
-    margin-bottom: 100px;
-}
-
-.edit-project h2 {
-    margin-bottom: 20px;
-}
-
-.edit-project input[type="text"] {
-    width: 95%;
-    height: 30px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.edit-project textarea {
-    width: 95%;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.ep-btn {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.edit-project input[type="submit"] {
-    border: none;
-    border-radius: 5px;
-    padding: 10px 30px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.ep-btn a {
-    border: black 2px solid;
-    border-radius: 5px;
-    padding: 10px 30px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-
-}
-
-/* portfolio detail */
-.portfolio-detail-box {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    align-items: center;
-}
-
-
-.portfolio-detail-navbar {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    justify-content: space-between;
-    border-radius: 8px;
-    align-items: center;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-}
-
-.portfolio-detail-navbar h1 {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.portfolio-detail-navbar a {
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    padding: 10px 30px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-}
-
-.portfolio-detail {
-    display: flex;
-    flex-direction: column;
-    width: 98%;
-    margin-top: 30px;
-    margin-bottom: 50px;
-
-}
-
-.portfolio-detail h2 {
-    margin-bottom: 20px;
-}
-
-.portfolio-detail img {
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 2%;
-
-}
-
-.portfolio-detail p {
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-.portfolio-detail .techstack {
-    color: #000000b3;
-}
-
-.portfolio-detail a {
-    color: black;
-}
-
-
 /* contact */
 
 .contact {
@@ -551,4 +229,140 @@ body {
 
 .contact-link a {
     color: black;
+}
+
+
+/* Untuk Tablet */
+@media screen and (max-width: 868px) {
+    /* CSS untuk Tablet di sini */
+
+    body {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .navbar {
+        /* border: 1px black solid; */
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        position: -webkit-sticky;
+        top: 91vh;
+        width: 100%;
+
+        padding-bottom: 25px;
+    }
+
+    .navbar .logo {
+        display: none;
+    }
+
+    .navbar button {
+        cursor: pointer;
+        padding: 18px;
+        padding-bottom: 20px;
+        color: black;
+        background-color: transparent;
+        border: none;
+        border-radius: 10px;
+        margin-top: 10px;
+        transition: background-color 0.8s, color 0.3s;
+    }
+
+    .nav-btn.active {
+        background-color: #d6d9dd56;
+        color: #000000;
+        font-weight: 800;
+
+    }
+
+    .main-content {
+        /* border: 1px black solid; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 80vw;
+        padding: 10px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 300px;
+    }
+
+}
+
+/* Untuk Smartphone */
+@media screen and (max-width: 450px) {
+    /* CSS untuk Smartphone di sini */
+
+    p {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    .box-txt {
+        font-size: 14px;
+    }
+
+    .navbar button {
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        color: #505050;
+    }
+
+    .navbar button i {
+        font-size: 20px;
+    }
+
+    .nav-btn.active {
+        background-color: transparent;
+        color: #000000;
+        font-weight: 500;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .home .box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        border: 2px #0000001a solid;
+        border-radius: 20px;
+        width: 280px;
+        padding: 10px;
+        margin: 20px;
+        margin-left: 0;
+    }
+
+
+    .portfolio-card {
+        width: 265px;
+    }
+
+
+    .portfolio-card img {
+        width: 265px;
+    }
+
+
 }

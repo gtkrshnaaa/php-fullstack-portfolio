@@ -20,22 +20,20 @@ $result_item2 = mysqli_query($conn, $sql_item2);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-
-    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
 <nav class="navbar">
-        <img src="assets/img/logo.png" width="60px">
-        <button class="nav-btn active mt-2" onclick="scrollToSection('home')" data-target="home">Home</button>
-        <button class="nav-btn" onclick="scrollToSection('about')" data-target="about">About</button>
-        <button class="nav-btn" onclick="scrollToSection('portfolio')" data-target="portfolio">Portfolio</button>
-        <button class="nav-btn" onclick="scrollToSection('contact')" data-target="contact">Contact</button>
-        <button class="nav-btn-to-dashb"><a href="dashboard/pages/dashboard.php">Dashboard</a></button>
+        <img class="logo" src="assets/img/logo.png" width="60px">
+        <button class="nav-btn active mt-2" onclick="scrollToSection('home')" data-target="home"><i class="uil uil-estate"></i> Home</button>
+        <button class="nav-btn" onclick="scrollToSection('about')" data-target="about"><i class="uil uil-user"></i> About</button>
+        <button class="nav-btn" onclick="scrollToSection('portfolio')" data-target="portfolio"><i class="uil uil-layers"></i> Portfolio</button>
+        <button class="nav-btn" onclick="scrollToSection('contact')" data-target="contact"><i class="uil uil-message"></i> Contact</button>
     </nav>
 
     <main class="main-content">
         <section id="home" class="home">
-            <h1>Gilang Teja Krishna</h1>
+            <h1 class="home-name">Gilang Teja Krishna</h1>
             <p class="home-dsc mt-2">I am Gilang Teja Krishna, <span>a student and Fullstack Web Developer</span>. I am delighted to share my work and experiences with you here.
             </p>
 
@@ -48,9 +46,9 @@ $result_item2 = mysqli_query($conn, $sql_item2);
                 ?>
                 <img src="<?php echo $imageSrc; ?>">
                 <div class="box-dsc">
-                    <p><span><?php echo $row_item1['githubrepo']; ?>+</span> GitHub Repositories</p>
-                    <p><span><?php echo $row_item1['repostar']; ?>+</span> Stars in total</p>
-                    <p><span><?php echo $row_item1['clientt']; ?>+</span> Client</p>
+                    <p class="box-txt"><span><?php echo $row_item1['githubrepo']; ?>+</span> GitHub Repositories</p>
+                    <p class="box-txt"><span><?php echo $row_item1['repostar']; ?>+</span> Stars in total</p>
+                    <p class="box-txt"><span><?php echo $row_item1['clientt']; ?>+</span> Client</p>
                 </div>
             </div>
             <p class="home-dsc mt-2">As a Fullstack Web Developer, I have developed and designed various types of websites involving advanced technologies such as HTML, CSS, JavaScript, and PHP. I am always seeking ways to enhance my skills and explore new technologies that can assist me in creating better solutions.
@@ -62,7 +60,7 @@ $result_item2 = mysqli_query($conn, $sql_item2);
         </section>
 
         <section id="about" class="about">
-            <h2>A Junior Web Developer</h2>
+            <h2><span class="tags">#  </span> A Junior Web Developer</h2>
             <p>Hello there! I'm Gilang, a passionate Fullstack Web Developer based in Indonesia. With a blend of creativity and technical prowess, I thrive on bringing digital ideas to life through elegant and efficient web solutions.</p>
 
             <h3>Crafting Digital Experiences</h3>
@@ -81,7 +79,9 @@ $result_item2 = mysqli_query($conn, $sql_item2);
         </section>
 
         <section id="portfolio" class="portfolio">
-            <h2>Portofolio</h2>
+            <a class="linktodshb" href="dashboard/pages/dashboard.php">
+            <h2><span class="tags">#  </span> Portofolio</h2>
+            </a>
             <div class="portfolio-list">
                 <?php while ($row_item2 = mysqli_fetch_assoc($result_item2)) { ?>
                     <div class="portfolio-card">
@@ -100,7 +100,7 @@ $result_item2 = mysqli_query($conn, $sql_item2);
         </section>
 
         <section id="contact" class="contact">
-            <h2>Lets Talk</h2>
+            <h2><span class="tags">#  </span> Lets Talk</h2>
             <p>I enjoy communicating with fellow developers, entrepreneurs, or individuals who share an interest in technology. Please feel free to contact me through one of the options below.</p>
             <div class="contact-link mt-2">
                 <a href="#">WhatsApp</a>
@@ -108,9 +108,9 @@ $result_item2 = mysqli_query($conn, $sql_item2);
             </div>
         </section>
 
-        <br><br><br><br><br><br>
-        <br><br><br><br><br><br>
-        <br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
+
 
     </main>
 
